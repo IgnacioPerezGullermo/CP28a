@@ -174,7 +174,7 @@ function passport(minAge, country) {
       if(el.age >= minAge && el.allowed.includes(country)){
         allowedPeople.push(el)
       }
-      console.log(allowedPeople)
+      //console.log(allowedPeople)
     }
     if(allowedPeople.length === 0) return  false
     return allowedPeople
@@ -216,8 +216,10 @@ function countDeep(arr) {
 //   "Ling Bouvier": []
 // }
 // Ejemplo:
-//  - Caso que devuelve true --> isAncestor(genealogyTree, "Jacqueline Bouvier", "Maggie Simpson")
-//  - Caso que devuelve false --> isAncestor(genealogyTree, "Jacqueline Bouvier", "Abigail Simpson")
+//  - Caso que devuelve true --> isAncestor(genealogyTree, "Jacqueline Bouvier", 
+//    "Maggie Simpson")
+//  - Caso que devuelve false --> isAncestor(genealogyTree, "Jacqueline Bouvier", 
+//    "Abigail Simpson")
 //  [Observar los tests para otros casos]
 var isAncestor = function (genealogyTree, ancestor, descendant) {
   // Tu código aca:
@@ -273,12 +275,12 @@ function cardGame(playerOneCards, playerTwoCards) {
   //console.log(playerOneCards, playerTwoCards)
   var playerOneCastle = 100;
   var playerTwoCastle = 100;
-  //console.log(playerOneCards.array.length)
   while(playerOneCards.array.length !== 0 && playerTwoCards.array.length !== 0){
     var ataquePlayerOne= playerOneCards.dequeue()
     var defensaPlayerOne=playerOneCards.dequeue()
     var ataquePlayerTwo= playerTwoCards.dequeue()
     var defensaPlayerTwo=playerTwoCards.dequeue()
+    console.log(ataquePlayerOne.attack)
     if(ataquePlayerOne.attack>defensaPlayerTwo.defense){
       playerTwoCastle = playerTwoCastle - (ataquePlayerOne.attack-defensaPlayerTwo.defense)
     }

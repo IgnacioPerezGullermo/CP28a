@@ -1,7 +1,7 @@
 const { expect } = require("chai");
 const { passport } = require("../checkpoint.js");
 
-xdescribe("EJERCICIO 6: passport", function () {
+describe("EJERCICIO 6: passport", function () {
   let people = [
     { name: "Cristian", age: 19, allowed: ["BRA"] },
     { name: "Ana", age: 18, allowed: ["ALE"] },

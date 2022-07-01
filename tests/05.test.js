@@ -3,7 +3,7 @@ const expect = require("chai").expect;
 /* eslint-disable no-undef */
 const { createBST } = require("../checkpoint.js");
 
-xdescribe("EJERCICIO 5: createBST", function () {
+describe("EJERCICIO 5: createBST", function () {
   it("Debe generar un arbol correctamente a partir de un array", function () {
     var tree = createBST([16, 6, 23, 2, 17, 31, 14, 5]);
     expect(tree.value).to.equal(16);

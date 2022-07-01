@@ -1,7 +1,7 @@
 const { expect } = require("chai");
 const { LinkedList } = require("../checkpoint.js");
 
-xdescribe("EJERCICIO 1: Order LinkedList", function () {
+describe("EJERCICIO 1: Order LinkedList", function () {
   var linkedList = new LinkedList();
 
   it("EJERCICIO 1: Order Debe retornar una lista ordenada", function () {

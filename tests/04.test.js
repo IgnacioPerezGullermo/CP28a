@@ -3,7 +3,7 @@ const expect = require("chai").expect;
 /* eslint-disable no-undef */
 const { BinarySearchTree } = require("../checkpoint.js");
 
-xdescribe("searchMin", function () {
+describe("searchMin", function () {
   it("EJERCICIO 4: SearchMin debe encontrar el valor mas pequeño", function () {
     var tree = new BinarySearchTree(16);
     tree.insert(6);

@@ -3,7 +3,7 @@ const expect = require("chai").expect;
 /* eslint-disable no-undef */
 const { isAncestor } = require("../checkpoint.js");
 
-xdescribe("EJERCICIO 8: isAncestor", function () {
+describe("EJERCICIO 8: isAncestor", function () {
   const genealogyTree = {
     "Mona Simpson": [],
     "Marge Simpson": ["Lisa Simpson", "Maggie Simpson"],

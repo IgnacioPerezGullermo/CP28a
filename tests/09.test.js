@@ -3,7 +3,7 @@ const expect = require("chai").expect;
 /* eslint-disable no-undef */
 const { Queue, cardGame } = require("../checkpoint.js");
 
-xdescribe("EJERCICIO 6: cardGame", function () {
+describe("EJERCICIO 6: cardGame", function () {
   var playerOne;
   var playerOneCopy;
   var playerTwo;
